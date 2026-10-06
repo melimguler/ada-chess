@@ -1,0 +1,41 @@
+/* Ada: Chess Coach — privacy and support pages. No trackers, no third-party requests:
+   the fonts are served from this site (SIL Open Font License, see fonts/). */
+@font-face { font-family: "Figtree"; src: url("fonts/Figtree-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("fonts/Figtree-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("fonts/Newsreader-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+
+:root {
+  --bg: #0F1720; --surface: #17212B; --line: #2A3844;
+  --text: #F4F1EA; --muted: #A9B4BE; --amber: #F2A93B; --link: #F7C274;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #FBF9F4; --surface: #F1ECE2; --line: #DDD5C6; --text: #17212B; --muted: #55606A; --amber: #A8660B; --link: #8A5208; color-scheme: light; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 "Figtree", -apple-system, system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header.top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.brand { font-family: "Newsreader", Georgia, serif; font-size: 22px; color: var(--text); text-decoration: none; }
+.brand span { color: var(--amber); }
+nav a { margin-left: 16px; font-size: 15px; }
+nav a:first-child { margin-left: 0; }
+h1 { font-family: "Newsreader", Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.15; margin: 0 0 8px; }
+h2 { font-weight: 600; font-size: 20px; margin: 40px 0 8px; }
+h3 { font-weight: 600; font-size: 17px; margin: 24px 0 4px; }
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--link); }
+.meta { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 16px 0 24px; }
+.box ul { margin: 0; }
+.table-wrap { overflow-x: auto; margin: 12px 0 20px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.app-icon { display: block; width: 96px; height: 96px; border-radius: 22px; margin: 0 0 20px; }
+.links a { display: block; font-size: 19px; margin: 10px 0; }
+@media (max-width: 520px) { h1 { font-size: 32px; } th, td { font-size: 14px; } }
